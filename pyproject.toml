@@ -1,0 +1,16 @@
+[project]
+name = "topdeskpy"
+version = "0.1.0"
+description = "Thin python wrapper for some topdesk API calls"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 240
