@@ -31,7 +31,7 @@ class Topdeskclient:
         auth_base64 = base64.b64encode(auth_bytes).decode("utf-8")
         return f"Basic {auth_base64}"
 
-    def create_incident(self, callType, request=None):
+    def create_incident(self, callType="Information", request=None):
         server = os.environ.get("COMPUTERNAME")
         project_dir = Path(os.path.dirname(os.path.abspath(__file__))).name
         brief_description = f"Problem med Automatik: {project_dir}, server: {server}"
